@@ -25,16 +25,47 @@ public class Main {
     static int pretzels_available = 60;
     static double cash = 1500.0;
     static double tips = 0.0;
+    static double pretzel_Price = 2.00;
+    static double lemonade_Price = 8.00;
 
 
     public static void main(String[] args) {
         //	Replace this with your dry inventory function!
-        wet_inventory();
+        dry_inventory();
+        System.out.println("Results for the hour!");
+        System.out.println("Lemonades Inventory: " + lemonades_available);
+        System.out.println("Pretzels Inventory: " + pretzels_available);
+        System.out.println("Cash: " + cash);
+        System.out.println("Tips: " + tips);
     }
 
-    static void dry_inventory() {
-        // Your DRY Solution goes here!
+    static void order(int pretzels_purchasesd, int lemonade_purchased, int customer_tips) {
+
+        pretzels_available -= pretzels_purchasesd;
+        lemonades_available -= lemonade_purchased;
+        tips += customer_tips;
+        cash += (pretzels_purchasesd * pretzel_Price) + (lemonade_purchased * lemonade_Price);
+
     }
+
+    static void dry_inventory(){
+        order(4,1,4);
+        order(2,3,0);
+        order(3,0,0);
+        order(1, 2, 0);
+        order(0,6,10);
+        order(0,4,5);
+        order(2,0,0);
+        order(10,8,10);
+        order(6,0,0);
+        order(0,1,0);
+        order(1,0,0);
+        order(0,7,4);
+        order(2,0,0);
+        order(6,3,0);
+        order(9,2,3);
+    }
+
 
     static void wet_inventory() {
         /**
@@ -127,3 +158,6 @@ public class Main {
         System.out.println("Tips: " + tips);
     }
 }
+
+
+
