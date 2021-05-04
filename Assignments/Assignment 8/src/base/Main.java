@@ -29,7 +29,7 @@ public class Main {
 
     public static void main(String[] args) {
         int a = 9;
-        System.out.println("fib("+ a + ") = "+ fibonaci_linear(a, 0, 1));
+        System.out.println(fibonaci_linear(a, 0, 1));
         System.out.println(fibonaci_tail(a));
         System.out.println(fibonaci_head(a));
     }
