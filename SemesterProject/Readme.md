@@ -1,3 +1,6 @@
+
+#Gabriella Nina's Binary Search Tree
+
 For my binary search tree I began by I creating a node class that creates a node for the tree.
 I then created a new class called BST that holds all the functions to manipulate the tree. I 
 created a function that inserted a new element into the tree, deleted an element from a tree and searched
