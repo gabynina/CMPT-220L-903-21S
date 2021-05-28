@@ -86,7 +86,7 @@ public class DumbList {
 //                tempArr.add(tempNode.value);
 //                tempNode = tempNode.nextNode;
 //            }
-//            tempArr.add(tempNode.value);
+//            tempArr.add(tempNode.valuetree);
 //        }
 //        Collections.sort(tempArr);
 //        this.root = null;
